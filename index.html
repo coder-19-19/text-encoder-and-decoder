@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/bootstrap.min.css">
+    <title>Text Encoder And Decoder</title>
+</head>
+<body>
+    <div class="container mt-5 font-monospace">
+        <div class="row justify-content-center">
+            <div class="col-sm-8 text-center">
+                <h1><b>Fərman Allahverdiyev</b></h1>
+                <h2>Text Encoder and Decoder</h2>
+            </div>
+            <div class="col-sm-12 col-md-6 mt-4" id="first">
+                <div class="card shadow">
+                    <div class="card-header">
+                        <b>Text Encoder</b>
+                    </div>
+                    <div class="card-body encode">
+                        <input type="text" placeholder="Şifrələnəcək mətni daxil edin" class="form-control" id="text"/>
+                        <input type="password" placeholder="Parolu daxil edin" class="form-control mt-2" id="password"/>
+                        <button class="btn btn-success mt-2">Şifrələ</button>
+                    </div>
+                </div>
+                <div class="result1"></div>
+            </div>
+            <div class="col-sm-12 col-md-6 mt-4" id="second">
+                <div class="card shadow">
+                    <div class="card-header">
+                        <b>Text Decoder</b>
+                    </div>
+                    <div class="card-body decode">
+                        <input type="text" placeholder="Şifrəsi açılacaq mətni daxil edin" class="form-control" id="decode-text"/>
+                        <input type="text" placeholder="Parolu daxil edin" class="form-control mt-2" id="decode-password"/>
+                        <button class="btn btn-danger mt-2">Şifrəni aç</button>
+                    </div>
+                </div>
+                <div class="result2"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="./assets/main.js"></script>
+</body>
+</html>
